@@ -141,8 +141,11 @@ plot( x=activity_average_per_interval$interval, y=activity_average_per_interval$
 <pre class="r"><code>nrow(activity[is.na(activity$steps),])</code></pre>
 <pre><code>## [1] 2304</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li><p>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</p></li>
-<li><p>Create a new dataset that is equal to the original dataset but with the missing data filled in.</p></li>
+<li>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</li>
+</ol>
+<p>The strategy is replacing ‘NA’ with corresponding average steps value per interval in activity_average_per_interval. I’m using the mean for that 5-minute interval.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Create a new dataset that is equal to the original dataset but with the missing data filled in.</li>
 </ol>
 <p>Replacing ‘NA’ with corresponding average steps value per interval in activity_average_per_interval</p>
 <pre class="r"><code>activity_new &lt;- activity

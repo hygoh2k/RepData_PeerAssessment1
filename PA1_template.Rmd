@@ -78,6 +78,8 @@ nrow(activity[is.na(activity$steps),])
 
 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
+The strategy is replacing 'NA' with corresponding average steps value per interval in activity_average_per_interval. I'm using the mean for that 5-minute interval.
+
 3. Create a new dataset that is equal to the original dataset but with the missing data filled in.
 
 Replacing 'NA' with corresponding average steps value per interval in activity_average_per_interval
